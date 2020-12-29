@@ -1,0 +1,57 @@
+.ProjectInfo {
+  display: flex;
+}
+
+.label {
+  font-size: 1rem;
+  color: #94a4b4;
+}
+
+.projectName {
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.technologies {
+  list-style: none;
+  padding: 0;
+  margin: 0 -0.4rem 1rem -0.4rem;
+}
+
+.techItem {
+  display: inline-block;
+  margin: .4rem;
+  border: 1px solid #22262a;
+  padding: .4rem;
+  color: #94a4b4;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.image {
+  flex: 1;
+  line-height: 0;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  padding: 16px;
+  background-color: #343a41;
+}
+
+.description {
+  margin-top: 16px 0;
+  line-height: 1.5;
+  color: #94a4b4;
+  overflow-y: scroll;
+  max-height: 50%;
+  white-space: pre-line;
+}

@@ -1,0 +1,9 @@
+.RollingWord {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.Top, .Bottom {
+  transition: all .25s;
+  line-height: 1;
+}

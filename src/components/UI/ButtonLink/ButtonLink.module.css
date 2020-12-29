@@ -1,0 +1,15 @@
+.ButtonLink {
+  padding: .1em 1em 0.3em 1em;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ButtonLink svg {
+  vertical-align: -0.125em;
+  width: 1.25em;
+  height: 1em;
+  margin-right: 0.3em;
+}
