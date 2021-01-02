@@ -1,25 +1,29 @@
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  filter: blur(2px) brightness(0.5);
-  user-select: none;
+@value colors: "../../colors.css";
+@value primary-main, primary-dark, text-primary, text-primary-dark from colors;
+
+.Home {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
 }
 
 .wrapper {
   text-align: center;
 }
 
-.title {
-  font-size: 3rem;
+.first:first-child {
+  color: primary-main;
 }
 
-.text {
-  font-size: 2rem;
-  color: gray;
-  margin: 0;
+.first:nth-child(2) {
+  color: primary-dark;
+}
+
+.second:first-child {
+  color: text-primary;
+}
+
+.second:nth-child(2) {
+  color: text-primary-dark;
 }

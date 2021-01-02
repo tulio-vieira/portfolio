@@ -3,22 +3,19 @@ import RollingPhrase from '../RollingPhrase';
 import Section from '../../hoc/Section/Section';
 import classes from './Home.module.css';
 
-export default function Home({ backgroundUrl }) {
+export default function Home() {
   return (
-    <Section>
-      <img className={classes.background} alt='Background' src={backgroundUrl} />
+    <Section className={classes.Home} id='home' >
       <div className={classes.wrapper}>
         <RollingPhrase
           text="Hello world, It's Tulio Vieira"
           fontSize={48}
-          colorTop='#ffffff'
-          colorBottom='#b4b4b4'
+          className={classes.first}
         />
         <RollingPhrase
           text="I'm a software developer"
           fontSize={32}
-          colorTop='#d6ff00'
-          colorBottom='#6a7f00'
+          className={classes.second}
         />
       </div>
     </Section>

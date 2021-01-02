@@ -1,38 +1,51 @@
 .Navbar {
   position: fixed;
-  width: 100vw;
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
   z-index: 400;
   top: 0;
   left: 0;
+  right: 0;
   color: white;
-  max-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px 16px 16px;
+  padding: 16px 16px 40px 16px;
 }
 
 .logo {
-  font-family: 'Vulf Mono Italic';
+  text-decoration: none;
+  cursor: pointer;
 }
-.logo span {
-  margin: 0;
+
+.logo svg {
+  height: 3em;
 }
 
 .items {
-  list-style: none;
-  margin: 0;
   font-size: 1.2rem;
 }
 
-.items li {
-  display: inline-block;
-  margin: 8px;
+.items a {
+  padding: 8px 16px;
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
+  border-radius: 4px;
+  transition: all 300ms;
+  font-size: 1.2rem;
 }
 
-.items li:hover{
-  text-decoration: underline;
+.items a:hover {
+  background: rgba(56, 56, 56, 0.5);
+}
+
+@media only screen and (max-width: 400px) {
+  .items a {
+    padding: 8px;
+  }
+
+  .logo svg {
+    height: 2.5rem;
+  }
 }

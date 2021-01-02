@@ -1,0 +1,8 @@
+- custom scrollbar
+- background changes - ok
+- contact page - ok
+- gifs
+- links on navbar - ok
+- fix modal breakpoint - ok
+- footer - ok
+- font - ok

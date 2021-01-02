@@ -1,0 +1,21 @@
+@value colors: "../../colors.css";
+@value primary-main from colors;
+
+.Projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Projects p {
+  margin: 1em 0;
+  font-size: 1.2em;
+  align-self: flex-start;
+  font-family: 'Roboto Mono', monospace;
+  color: primary-main;
+}
+
+.Projects h1 {
+  align-self: flex-start;
+  margin: 0;
+}

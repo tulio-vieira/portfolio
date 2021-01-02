@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import classes from './Modal.module.css';
+import {ReactComponent as CloseSvg} from '../../../assets/svgs/close.svg';
 
 export default class Modal extends Component {
 
@@ -19,7 +20,8 @@ export default class Modal extends Component {
         <div
           className={classes.Modal}
           style={{ opacity: this.props.show ? '1' : '0',
-            pointerEvents: this.props.show ? 'auto' : 'none' }} >
+          pointerEvents: this.props.show ? 'auto' : 'none' }} >
+          <CloseSvg className={classes.closeIcon} onClick={this.props.onClose}/>
           {this.props.children}
         </div>
       </>

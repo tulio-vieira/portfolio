@@ -1,14 +1,13 @@
+@value colors: "../../colors.css";
+@value background-main, primary-main, text-primary-dark from colors;
+
 .ProjectInfo {
   display: flex;
-}
-
-.label {
-  font-size: 1rem;
-  color: #94a4b4;
+  height: 100%;
 }
 
 .projectName {
-  color: white;
+  color: primary-main;
   font-size: 2rem;
   font-weight: lighter;
   margin: 0;
@@ -20,12 +19,19 @@
   margin: 0 -0.4rem 1rem -0.4rem;
 }
 
+.label, .techItem {
+  color: text-primary-dark;
+}
+
+.label {
+  font-size: 1rem;
+}
+
 .techItem {
   display: inline-block;
   margin: .4rem;
-  border: 1px solid #22262a;
+  border: 1px solid text-primary-dark;
   padding: .4rem;
-  color: #94a4b4;
   font-weight: lighter;
   font-size: 0.9rem;
 }
@@ -42,16 +48,32 @@
 }
 
 .info {
+  background: background-main;
   flex: 1;
-  padding: 16px;
-  background-color: #343a41;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 .description {
-  margin-top: 16px 0;
+  margin: 1rem 0;
   line-height: 1.5;
-  color: #94a4b4;
+  font-family: 'Roboto Mono', monospace;
   overflow-y: scroll;
   max-height: 50%;
   white-space: pre-line;
+}
+
+@media only screen and (max-width: 720px) {
+  .ProjectInfo {
+    flex-direction: column;
+  }
+  .image {
+    max-height: 40%;
+  }
+
+  .info {
+    max-height: 60%;
+  }
 }

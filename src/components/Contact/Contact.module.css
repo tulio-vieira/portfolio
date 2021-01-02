@@ -1,0 +1,43 @@
+@value colors: "../../colors.css";
+@value primary-main, text-primary-dark from colors;
+
+.rollingWord:nth-child(2) {
+  color: text-primary-dark;
+}
+
+.contactLink {
+  list-style: none;
+  margin: 2em;
+}
+
+.contactLink a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+.contactLink svg {
+  width: 3em;
+  color: primary-main;
+  margin-right: 0.5em;
+}
+
+@media only screen and (max-width: 720px) {
+  .contactLink {
+    margin: 2em 0;
+  }
+
+  .contactLink svg {
+    width: 1.2em;
+  }
+
+  .rollingWord {
+    margin-top: 0.5em;
+    font-size: 0.5em;
+  }
+}

@@ -1,15 +1,14 @@
 import React from 'react';
 import RollingWord from './UI/RollingWord/RollingWord';
 
-export default function RollingPhrase({ text, fontSize, colorTop, colorBottom }) {
+export default function RollingPhrase({ text, fontSize, className }) {
   return (
     <div>
       {text.split(' ').map((word, index) =>
         <RollingWord
           key={index}
           fontSize={fontSize}
-          colorTop={colorTop}
-          colorBottom={colorBottom} 
+          className={className}
           word={word} />
       )}
     </div>

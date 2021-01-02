@@ -4,12 +4,12 @@ import {ReactComponent as CodeSvg} from '../../assets/svgs/code.svg';
 import {ReactComponent as EyeSvg} from '../../assets/svgs/eye.svg';
 import ButtonLink from '../UI/ButtonLink/ButtonLink';
 
-export default function ProjectInfo({ url, description, name, stack }) {
+export default function ProjectInfo({ gifUrl, demoUrl, codeUrl, description, name, stack }) {
 
   return (
     <div className={classes.ProjectInfo}>
       <div className={classes.image}>
-        <img src={url} alt={name} />
+        <img src={gifUrl} alt={name} />
       </div>
       <div className={classes.info} >
         <div className={classes.label}>Project</div>
@@ -25,20 +25,22 @@ export default function ProjectInfo({ url, description, name, stack }) {
 
         <div className={classes.label}>About</div>
 
-        <p className={classes.description}>
+        <div className={classes.description}>
           {description}
-        </p>
-
-        <ButtonLink
-          style={{marginRight: 16}}
-          text='Demo'
-          svg={() => <EyeSvg />}
-          url='#' />
+        </div>
         
-        <ButtonLink
-          text='Code'
-          svg={() => <CodeSvg />}
-          url='#' />
+        <div style={{marginLeft: 'auto'}}>
+          {demoUrl && <ButtonLink
+            style={{marginRight: 16}}
+            text='Demo'
+            svg={() => <EyeSvg />}
+            url={demoUrl} />}
+          
+          {codeUrl && <ButtonLink
+            text='Code'
+            svg={() => <CodeSvg />}
+            url={codeUrl} />}
+        </div>
         
       </div>
     </div>

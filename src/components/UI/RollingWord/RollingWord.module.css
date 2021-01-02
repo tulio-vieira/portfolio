@@ -1,9 +1,18 @@
 .RollingWord {
-  overflow: hidden;
   display: inline-block;
+  overflow: hidden;
+  margin: '0 0.11em';
 }
 
 .Top, .Bottom {
   transition: all .25s;
   line-height: 1;
+}
+
+.Top {
+  margin-bottom: 1em;
+}
+
+.moved {
+  transform: translateY(-2em);
 }

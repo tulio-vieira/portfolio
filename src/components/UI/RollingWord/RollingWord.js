@@ -11,21 +11,18 @@ export default class RollingWord extends Component {
   }
 
   render() {
-    const { word, fontSize, colorTop, colorBottom } = this.props;
-    const transfromStyle = `translateY(-${fontSize * 2}px)`;
+    const { word, fontSize, className } = this.props;
     return (
       <div
         className={classes.RollingWord}
         style={{ fontSize, height: fontSize, margin: `0 ${fontSize/8}px` }}
         onMouseEnter={this.roll} >
         <div
-          className={classes.Top}
-          style={{ color: colorTop, marginBottom: fontSize, transform: this.state.rolled ? transfromStyle : null }}>
+          className={`${classes.Top} ${className} ${this.state.rolled ? classes.moved : null}`} >
           {word}
         </div>
         <div
-          className={classes.Bottom}
-          style={{ color: colorBottom, transform: this.state.rolled ? transfromStyle : null }}>
+          className={`${classes.Bottom} ${className} ${this.state.rolled ? classes.moved : null}`} >
           {word}
         </div>
       </div>

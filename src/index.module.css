@@ -1,12 +1,20 @@
+@value colors: "./colors.css";
+@value text-primary, background-main from colors;
+
 * {
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+html {
+  font-size: 16px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 body {
-  background-color: #2a2d3f;
+  background-color: background-main;
+  color: text-primary;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Staatliches', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,16 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-@font-face {
-  font-family: 'Vulf Mono Italic';
-  src: url('fonts/Vulf_Mono-Italic_web.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-     
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+@media only screen and (max-width: 520px) {
+  html {
+    font-size: 14px;
+  }
 }
