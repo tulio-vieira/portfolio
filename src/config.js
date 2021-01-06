@@ -6,7 +6,7 @@ export const myProjects = [
     It implements authentication, user configuration, image uploads, linkage to videos (youtube or vimeo), ability to like posts or comments, threaded comment section, user pages, search box and more.
     
     It is currently deployed as a heroku app, so the demo may take a bit longer to load!`,
-    gifUrl: "/gifs/plazon.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/plazon.gif",
     codeUrl: "https://github.com/tulio-vieira/plazon-backend",
     demoUrl: "https://plazon.herokuapp.com/feed",
     stack: [
@@ -19,7 +19,7 @@ export const myProjects = [
   {
     name: "Shortest Path Visualizer",
     description: `This is a java Path finder that implements both the A* and Dijkstra's algorithms. Walls are displayed with the Marching Squares algorithm.`,
-    gifUrl: "/gifs/shortest-path-visualizer.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/shortest-path-visualizer.gif",
     codeUrl: "https://github.com/tulio-vieira/shortest-path-visualizer",
     downloadUrl: "https://github.com/tulio-vieira/shortest-path-visualizer/raw/master/Shortest%20Path%20Visualizer.jar",
     stack: [
@@ -36,7 +36,7 @@ export const myProjects = [
     The notebooks used for training the neural network can be found [here](https://github.com/tulio-vieira/concrete-crack-detector-train). The net was then converted into a tensorflowjs model, which can run in the browser.
     
     However, due to bugs of tensorflowjs, the app won't work on mobile or weaker machines. It is also recommended to run it on Google Chrome.`,
-    gifUrl: "/gifs/concrete-crack-detector.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/concrete-crack-detector.gif",
     codeUrl: "https://github.com/tulio-vieira/concrete-crack-detector-frontend",
     demoUrl: "https://tulio-vieira.github.io/concrete-crack-detector-app/",
     stack: [
@@ -49,7 +49,7 @@ export const myProjects = [
   {
     name: "Chess Coordinates Trainer",
     description: `This app helps you learn the chess board coordinates! You can also choose a quadrant of the board to boost your learning.`,
-    gifUrl: "/gifs/chess-coordinates-trainer.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/chess-coordinates-trainer.gif",
     codeUrl: "https://github.com/tulio-vieira/chess-coordinates-trainer",
     demoUrl: "https://tulio-vieira.github.io/chess-coordinates-trainer",
     stack: [
@@ -65,7 +65,7 @@ export const myProjects = [
     Logged in users can see messages, but only members can post them. Members can see the names of the authors, and only admins can delete any content. 
     
     It is currently deployed as a heroku app, so the demo may take a bit longer to load!`,
-    gifUrl: "/gifs/members-only-project.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/members-only-project.gif",
     codeUrl: "https://github.com/tulio-vieira/members-only-project",
     demoUrl: "https://membersonlyproject.herokuapp.com",
     stack: [
@@ -77,7 +77,7 @@ export const myProjects = [
   {
     name: "Battleships",
     description: `This is a BattleShip game in Javascript!`,
-    gifUrl: "/gifs/battleship.gif",
+    gifUrl: process.env.PUBLIC_URL + "/gifs/battleship.gif",
     codeUrl: "https://github.com/tulio-vieira/battleship",
     demoUrl: "https://tulio-vieira.github.io/battleship",
     stack: [

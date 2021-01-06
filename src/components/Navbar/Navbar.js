@@ -6,12 +6,12 @@ export default function Navbar() {
 
   return (
     <header className={classes.Navbar}>
-      <a className={classes.logo} href='/#home'>
+      <a className={classes.logo} href={ process.env.PUBLIC_URL + '/#home'}>
         <LogoSvg/>
       </a>
       <div className={classes.items}>
-        <a href='/#projects'>Projects</a>
-        <a href='/#contact'>Contact</a>
+        <a href={ process.env.PUBLIC_URL + '/#projects'}>Projects</a>
+        <a href={ process.env.PUBLIC_URL + '/#contact'}>Contact</a>
       </div>
     </header>
   );
