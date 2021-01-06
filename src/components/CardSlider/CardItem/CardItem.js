@@ -1,5 +1,4 @@
 import * as React from "react";
-import LazyGif from "../../LazyGif/LazyGif";
 import classes from './CardItem.module.css';
 
 const CardItem = ({ name, url, style, onClick }) => (

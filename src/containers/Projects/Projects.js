@@ -7,7 +7,7 @@ import ProjectInfo from '../../components/ProjectInfo/ProjectInfo';
 import { myProjects } from '../../config';
 
 export default class Projects extends Component {
-  state = { show: false, activeIndex: 6 };
+  state = { show: false, activeIndex: 0 };
 
   toggleModal = () => {
     this.setState(prevState => {

@@ -1,99 +1,95 @@
 export const myProjects = [
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://dod6qkb6gz8ef.cloudfront.net/app/uploads/2020/09/08145740/Domcake-Dancing-Alien.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
+    name: "Plazon",
+    description: `Plazon is a social network inspired by Twitter and Reddit, developed as the final project for the [Odin Project](https://www.theodinproject.com) curriculum.
+    
+    It implements authentication, user configuration, image uploads, linkage to videos (youtube or vimeo), ability to like posts or comments, threaded comment section, user pages, search box and more.
+    
+    It is currently deployed as a heroku app, so the demo may take a bit longer to load!`,
+    gifUrl: "/gifs/plazon.gif",
+    codeUrl: "https://github.com/tulio-vieira/plazon-backend",
+    demoUrl: "https://plazon.herokuapp.com/feed",
+    stack: [
       "react",
       "nodejs",
       "mongodb",
-      "materialUI"
+      "material ui"
     ]
   },
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://www.thisiscolossal.com/wp-content/uploads/2014/03/120430.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
-      "react",
-      "nodejs",
-      "mongodb",
-      "materialUI"
+    name: "Shortest Path Visualizer",
+    description: `This is a java Path finder that implements both the A* and Dijkstra's algorithms. Walls are displayed with the Marching Squares algorithm.`,
+    gifUrl: "/gifs/shortest-path-visualizer.gif",
+    codeUrl: "https://github.com/tulio-vieira/shortest-path-visualizer",
+    downloadUrl: "https://github.com/tulio-vieira/shortest-path-visualizer/raw/master/Shortest%20Path%20Visualizer.jar",
+    stack: [
+      "java",
+      "java swing"
     ]
   },
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
+    name: "Concrete Crack Detector",
+    description: `This app was developed as part of my graduation project. It is an implementation of a Convolutional Neural Network trained for classifing images of cracked and non-cracked concrete images.
+
+    It works like this: the user selects an image of a concrete surface with cracks, and then the model predicts the presence or absence of concrete cracks in each position of a sliding window that passes over the selected image.
+    
+    The notebooks used for training the neural network can be found [here](https://github.com/tulio-vieira/concrete-crack-detector-train). The net was then converted into a tensorflowjs model, which can run in the browser.
+    
+    However, due to bugs of tensorflowjs, the app won't work on mobile or weaker machines. It is also recommended to run it on Google Chrome.`,
+    gifUrl: "/gifs/concrete-crack-detector.gif",
+    codeUrl: "https://github.com/tulio-vieira/concrete-crack-detector-frontend",
+    demoUrl: "https://tulio-vieira.github.io/concrete-crack-detector-app/",
+    stack: [
+      "keras",
+      "tensorflowjs",
       "react",
-      "nodejs",
-      "mongodb",
-      "materialUI"
+      "material ui"
     ]
   },
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://www.agenciaunius.com.br/wp-content/uploads/2017/07/Gif-animado-18.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
-      "react",
-      "nodejs",
-      "mongodb",
-      "materialUI"
+    name: "Chess Coordinates Trainer",
+    description: `This app helps you learn the chess board coordinates! You can also choose a quadrant of the board to boost your learning.`,
+    gifUrl: "/gifs/chess-coordinates-trainer.gif",
+    codeUrl: "https://github.com/tulio-vieira/chess-coordinates-trainer",
+    demoUrl: "https://tulio-vieira.github.io/chess-coordinates-trainer",
+    stack: [
+      "html",
+      "css",
+      "javascript"
     ]
   },
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://i.pinimg.com/originals/fd/3c/cd/fd3ccd7b49e366b4206f5ac7f8fa8dac.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
-      "react",
+    name: "Members Only Project",
+    description: `This is a very simple app that allows users to post messages. It was developed as a project for the [Odin Project](https://www.theodinproject.com) curriculum.
+    
+    Logged in users can see messages, but only members can post them. Members can see the names of the authors, and only admins can delete any content. 
+    
+    It is currently deployed as a heroku app, so the demo may take a bit longer to load!`,
+    gifUrl: "/gifs/members-only-project.gif",
+    codeUrl: "https://github.com/tulio-vieira/members-only-project",
+    demoUrl: "https://membersonlyproject.herokuapp.com",
+    stack: [
       "nodejs",
       "mongodb",
-      "materialUI"
+      "ejs"
     ]
   },
   {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://buffer.com/library/content/images/library/wp-content/uploads/2016/06/giphy.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
-      "react",
-      "nodejs",
-      "mongodb",
-      "materialUI"
-    ]
-  },
-  {
-    "name": "Test Project",
-    "description": "For this project I worked with things like Authentication with OAuth2, PayPal API, Database Design, UI & UX, and I used Vue and Vuex to make the project a Single Page Application.\n\nVictor from Adventure Cord approached me to develop a website for his Discord bot where users can log in with their Discord accounts and view their profile stats, view other users's stats, read news and updates for the bot directly from the team and purchase products to use within the bot. Since I had a lot of time to build the project and wanted to learn as much as possible, I decided to build everything from scratch.",
-    "gifUrl": "https://www.verdict.co.uk/wp-content/uploads/2017/09/giphy-downsized-large.gif",
-    "codeUrl": "/#",
-    "demoUrl": "/#",
-    "stack": [
-      "react",
-      "nodejs",
-      "mongodb",
-      "materialUI"
+    name: "Battleships",
+    description: `This is a BattleShip game in Javascript!`,
+    gifUrl: "/gifs/battleship.gif",
+    codeUrl: "https://github.com/tulio-vieira/battleship",
+    demoUrl: "https://tulio-vieira.github.io/battleship",
+    stack: [
+      "html",
+      "css",
+      "javascript"
     ]
   }
 ];
 
 export const contacts = [
-  { type: 'resume', url: process.env.PUBLIC_URL + '/curriculo-tulioVieira.pdf', text: 'Resumé' },
+  { type: 'resume', url: process.env.PUBLIC_URL + '/resume.pdf', text: 'Resumé' },
   { type: 'github', url: 'https://github.com/tulio-vieira', text: '/tulio-vieira' },
   { type: 'linkedin', url: 'https://www.linkedin.com/in/tulio-vieira', text: '/in/tulio-vieira' },
   { type: 'email', url: 'mailto: vieira.tulio@gmail.com', text: 'vieira.tulio@gmail.com' }

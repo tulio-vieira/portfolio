@@ -6,3 +6,17 @@
 - fix modal breakpoint - ok
 - footer - ok
 - font - ok
+
+https://plazon.herokuapp.com/feed
+https://membersonlyproject.herokuapp.com/
+
+
+GIFS
+
+- shortest-path-visualizer - ok
+- plazon - ok
+- concrete-crack-detector - ok
+- battleships - ok
+- chess coordinate trainer - ok
+- members only - ok
+

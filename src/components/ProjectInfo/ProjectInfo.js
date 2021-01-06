@@ -2,9 +2,12 @@ import React from 'react';
 import classes from './ProjectInfo.module.css';
 import {ReactComponent as CodeSvg} from '../../assets/svgs/code.svg';
 import {ReactComponent as EyeSvg} from '../../assets/svgs/eye.svg';
+import {ReactComponent as DownloadSvg} from '../../assets/svgs/download.svg';
 import ButtonLink from '../UI/ButtonLink/ButtonLink';
 
-export default function ProjectInfo({ gifUrl, demoUrl, codeUrl, description, name, stack }) {
+export default function ProjectInfo({ gifUrl, demoUrl, codeUrl, downloadUrl, description, name, stack }) {
+
+  const arr = description.split(/\[(.+)\]\((.+)\)/g);
 
   return (
     <div className={classes.ProjectInfo}>
@@ -26,15 +29,38 @@ export default function ProjectInfo({ gifUrl, demoUrl, codeUrl, description, nam
         <div className={classes.label}>About</div>
 
         <div className={classes.description}>
-          {description}
+          {arr.map((string, index) => {
+            switch(index % 3) {
+              case(0):
+                return string;
+              case(1):
+                return <a
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}
+                  href={arr[index + 1]}>
+                    {string}
+                  </a>;
+              default:
+                return null;
+              }
+            }
+          )}
         </div>
         
-        <div style={{marginLeft: 'auto'}}>
+        <div className={classes.buttons}>
           {demoUrl && <ButtonLink
             style={{marginRight: 16}}
             text='Demo'
             svg={() => <EyeSvg />}
             url={demoUrl} />}
+
+          {downloadUrl && <ButtonLink
+            style={{marginRight: 16}}
+            text='Download'
+            svg={() => <DownloadSvg />}
+            url={downloadUrl} />}
           
           {codeUrl && <ButtonLink
             text='Code'

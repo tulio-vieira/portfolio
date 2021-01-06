@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import classes from './Layout.module.css';
 import {backgrounds} from '../../config' ;
-import LazyImage from '../../components/LazyImage';
-import LazyGif from '../../components/LazyGif/LazyGif';
 
 export default class Layout extends Component {
   state = {sectionIndex: 0, transition: 1};
@@ -46,38 +44,21 @@ export default class Layout extends Component {
       <>
         <Navbar/>
 
-        {backgrounds.map((data, index) => {
-          const style = {
-            opacity: (index === sectionIndex) ? transition : (index === sectionIndex - 1) ? 1 : 0,
-            zIndex: -100 + index,
-            ...data.style
-          };
-
-          return index === 0 ?
-            <img
-              key={index}
-              style={style}
-              className={classes.background}
-              alt='background'
-              src={data.url} />
-            :
-            <LazyImage
-              key={index}
-              style={style}
-              className={classes.background}
-              alt='background'
-              src={data.url}
-              altSrc={backgrounds[0]} />
-          }
+        {backgrounds.map((data, index) => 
+          <img
+            key={index}
+            style={{
+              ...data.style,
+              opacity: (index === sectionIndex) ? transition : (index === sectionIndex - 1) ? 1 : 0,
+              zIndex: -100 + index
+            }}
+            className={classes.background}
+            alt='background'
+            src={data.url} />
         )}
         <main className={classes.wrapper}>
           {children}
         </main>
-
-        {/* <LazyGif
-          className={classes.test}
-          src='https://i.giphy.com/media/f8yGgQKnzQJPtXNaZT/giphy.webp'
-          alt='test gif'/> */}
 
         <footer className={classes.footer}>
           <span>Created by Tulio Vieira</span>
