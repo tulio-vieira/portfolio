@@ -22,6 +22,7 @@
 }
 
 .closeIcon {
+    z-index: 500;
     position: absolute;
     top: 16px;
     right: 40px;
