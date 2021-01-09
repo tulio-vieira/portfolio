@@ -5,6 +5,7 @@ import Section from "../../hoc/Section/Section";
 import Modal from '../../components/UI/Modal/Modal';
 import ProjectInfo from '../../components/ProjectInfo/ProjectInfo';
 import { myProjects } from '../../config';
+import background from '../../assets/images/vaporwave_blue.jpg';
 
 export default class Projects extends Component {
   state = { show: false, activeIndex: 0 };
@@ -18,7 +19,13 @@ export default class Projects extends Component {
   render() {
     return (
       <>
-        <Section className={classes.Projects} id='projects'>
+        <Section
+          className={classes.Projects}
+          id='projects'
+          backgroundImageUrl={background}
+          backgroundStyle={{filter: 'brightness(0.5) blur(2px)', objectPosition: 'top'}}>
+            <div className={classes.bottom}/>
+
             <h1>My Projects</h1>
             <p>These are my favorite projects from last year. Have a look around and make sure to hit me up!</p>
             <CardSlider

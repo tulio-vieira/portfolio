@@ -7,6 +7,7 @@ import { ReactComponent as ProfileSvg } from '../../assets/svgs/profile.svg';
 import { ReactComponent as GmailSvg } from '../../assets/svgs/gmail.svg';
 import { ReactComponent as LinkedInSvg } from '../../assets/svgs/linkedin.svg';
 import { contacts } from '../../config';
+import background from '../../assets/images/cropped_mountain.jpg';
 
 function ContactLink({ url, text, type }) {
   const svgMappings = {
@@ -30,7 +31,10 @@ function ContactLink({ url, text, type }) {
 
 export default function Contact() {
   return (
-    <Section id='contact'>
+    <Section
+      id='contact'
+      backgroundImageUrl={background}
+      backgroundStyle={{filter: 'brightness(0.5) grayscale(0.2) blur(3px)'}}>
       <h1>Contact Me</h1>
 
       {contacts.map((data, index) => 
@@ -38,7 +42,6 @@ export default function Contact() {
           <ContactLink {...data} />
         </div>
       )}
-
     </Section>
   );
 }

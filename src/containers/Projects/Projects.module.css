@@ -19,3 +19,13 @@
   align-self: flex-start;
   margin: 0;
 }
+
+.bottom {
+  z-index: -99;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(5,5,14,1) 0%, rgba(5,5,14,1) 25%, rgba(5,5,14,0) 100%);
+}

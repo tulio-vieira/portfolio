@@ -1,13 +1,5 @@
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  user-select: none;
-  transition: opacity 300ms;
+.wrapper {
+  position: relative;
 }
 
 .footer {
@@ -18,9 +10,6 @@
   justify-content: center;
   height: 64px;
   background: rgba(0,0,0,0.5);
-}
-
-.test {
-  width: 400px;
-  height: 300px;
+  position: absolute;
+  bottom: 0;
 }
