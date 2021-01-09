@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbe2efcf.chunk.css",
-    "main.js": "/static/js/main.8b80360f.chunk.js",
-    "main.js.map": "/static/js/main.8b80360f.chunk.js.map",
+    "main.css": "/static/css/main.6fe78a2b.chunk.css",
+    "main.js": "/static/js/main.cb5339fa.chunk.js",
+    "main.js.map": "/static/js/main.cb5339fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.550c5ae6.js",
     "runtime-main.js.map": "/static/js/runtime-main.550c5ae6.js.map",
-    "static/js/2.8f8205c8.chunk.js": "/static/js/2.8f8205c8.chunk.js",
-    "static/js/2.8f8205c8.chunk.js.map": "/static/js/2.8f8205c8.chunk.js.map",
+    "static/js/2.4afd646d.chunk.js": "/static/js/2.4afd646d.chunk.js",
+    "static/js/2.4afd646d.chunk.js.map": "/static/js/2.4afd646d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.fbe2efcf.chunk.css.map": "/static/css/main.fbe2efcf.chunk.css.map",
-    "static/js/2.8f8205c8.chunk.js.LICENSE.txt": "/static/js/2.8f8205c8.chunk.js.LICENSE.txt",
+    "static/css/main.6fe78a2b.chunk.css.map": "/static/css/main.6fe78a2b.chunk.css.map",
+    "static/js/2.4afd646d.chunk.js.LICENSE.txt": "/static/js/2.4afd646d.chunk.js.LICENSE.txt",
     "static/media/arrow.6cd1bf69.svg": "/static/media/arrow.6cd1bf69.svg",
     "static/media/close.8f3f4e46.svg": "/static/media/close.8f3f4e46.svg",
     "static/media/code.ee0d712f.svg": "/static/media/code.ee0d712f.svg",
+    "static/media/code_background_01.026e9595.jpg": "/static/media/code_background_01.026e9595.jpg",
+    "static/media/cropped_mountain.eb15d6e9.jpg": "/static/media/cropped_mountain.eb15d6e9.jpg",
     "static/media/download.49881604.svg": "/static/media/download.49881604.svg",
     "static/media/eye.dbbf31af.svg": "/static/media/eye.dbbf31af.svg",
     "static/media/github.08c1d423.svg": "/static/media/github.08c1d423.svg",
     "static/media/gmail.0795232c.svg": "/static/media/gmail.0795232c.svg",
     "static/media/linkedin.1056baa3.svg": "/static/media/linkedin.1056baa3.svg",
     "static/media/logo.4d16ed9d.svg": "/static/media/logo.4d16ed9d.svg",
-    "static/media/profile.84a8d169.svg": "/static/media/profile.84a8d169.svg"
+    "static/media/profile.84a8d169.svg": "/static/media/profile.84a8d169.svg",
+    "static/media/vaporwave_blue.35fe1f99.jpg": "/static/media/vaporwave_blue.35fe1f99.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.550c5ae6.js",
-    "static/js/2.8f8205c8.chunk.js",
-    "static/css/main.fbe2efcf.chunk.css",
-    "static/js/main.8b80360f.chunk.js"
+    "static/js/2.4afd646d.chunk.js",
+    "static/css/main.6fe78a2b.chunk.css",
+    "static/js/main.cb5339fa.chunk.js"
   ]
 }
