@@ -2,8 +2,10 @@
 @value background-main, primary-main, text-primary-dark from colors;
 
 .ProjectInfo {
+  background: background-main;
   display: flex;
   height: 100%;
+  position: relative;
 }
 
 .projectName {
@@ -16,7 +18,7 @@
 .technologies {
   list-style: none;
   padding: 0;
-  margin: 0 -0.4rem 1rem -0.4rem;
+  margin: 0 0 0.6rem -0.4rem;
 }
 
 .label, .techItem {
@@ -48,9 +50,9 @@
 }
 
 .info {
-  background: background-main;
+  overflow-y: scroll;
   flex: 1;
-  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -60,14 +62,11 @@
   margin: 1rem 0;
   line-height: 1.5;
   font-family: 'Roboto Mono', monospace;
-  overflow-y: scroll;
-  max-height: 50%;
   white-space: pre-line;
 }
 
 .buttons {
-  margin-top: auto;
-  align-self: flex-end;
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -77,6 +76,15 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+.scrollIcon {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 16px;
+  left: calc(75% - 8px);
+  transform: rotate(180deg);
+  color: text-primary-dark;
 }
 
 @media only screen and (max-width: 720px) {
@@ -89,5 +97,9 @@
 
   .info {
     max-height: 60%;
+  }
+
+  .scrollIcon {
+    left: calc(50% - 8px);
   }
 }

@@ -21,7 +21,9 @@ export default class Modal extends Component {
           className={classes.Modal}
           style={{ opacity: this.props.show ? '1' : '0',
           pointerEvents: this.props.show ? 'auto' : 'none' }} >
-          <CloseSvg className={classes.closeIcon} onClick={this.props.onClose}/>
+          <div className={classes.closeIcon} onClick={this.props.onClose}>
+            <CloseSvg />
+          </div>
           {this.props.children}
         </div>
       </>

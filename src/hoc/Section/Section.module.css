@@ -1,5 +1,7 @@
 .Section {
   height: 100vh;
+  min-height: 700px;
+  min-width: 260px;
   padding: 72px 10%;
   position: relative;
 }
